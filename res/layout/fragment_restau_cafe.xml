@@ -1,0 +1,187 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+    
+    
+    
+
+<!--     <FrameLayout -->
+<!--         android:layout_width="match_parent" -->
+<!--         android:layout_height="wrap_content" > -->
+<!--         <fragment -->
+<!--         android:id="@+id/map" -->
+<!--         android:name="com.google.android.gms.maps.MapFragment" -->
+<!--         android:layout_width="match_parent" -->
+<!--         android:layout_height="168dp" /> -->
+
+<!--     </FrameLayout> -->
+
+<!--       <TextView -->
+<!--         android:id="@+id/textView1" -->
+<!--         android:layout_width="match_parent" -->
+<!--         android:layout_height="wrap_content" -->
+<!--         android:gravity="center" -->
+<!--         android:text="OR SELECT FROM NEARBY PLACES" -->
+<!--         android:textColor="#29a3c7"  -->
+<!--         android:paddingTop="5dp" -->
+<!--         android:textSize="18dp" -->
+        
+<!--         android:paddingBottom="5dp"/> -->
+<!--     <View android:layout_width="match_parent" -->
+<!--         android:layout_height="2dp" -->
+<!--         android:background="#29a3c7" -->
+<!--         android:layout_marginLeft="10dp" -->
+<!--         android:layout_marginRight="10dp"/> -->
+
+<!--     <ListView -->
+<!--         android:id="@+id/listview" -->
+<!--         android:layout_width="match_parent" -->
+<!--         android:layout_height="wrap_content" -->
+<!--         android:headerDividersEnabled="true" >" -->
+<!--     </ListView> -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/orange"
+        android:orientation="horizontal" >
+        
+             <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+             <ImageView
+            android:id="@+id/back_btn_catalogue"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="4dp"
+            android:paddingBottom="8dp"
+            android:paddingRight="2dp"
+            android:paddingTop="8dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/icon_back"
+
+            />
+
+             </LinearLayout>
+             
+              <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+         android:layout_weight="0.4"
+         android:gravity="center"
+        android:orientation="vertical" >
+             
+        <TextView
+            android:id="@+id/titleOfHikesGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/cafe_map"
+            android:textColor="@color/white"
+            android:textSize="19sp"
+            android:textStyle="bold"
+
+
+            />
+</LinearLayout>
+        <LinearLayout
+            android:id="@+id/display"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+             android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/img_display"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:focusable="false"
+                android:focusableInTouchMode="true"
+                android:src="@drawable/icon_liste" />
+
+            <TextView
+                android:id="@+id/txt_btn_display"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/liste"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+
+                />
+
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+         android:layout_weight="0.13"
+         android:visibility="visible"
+            android:id="@+id/map_cafe"
+        android:orientation="vertical" >
+        
+        
+            <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.MapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    </FrameLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:layout_weight="0.13"
+        android:id="@+id/list_cafe"
+        android:orientation="vertical" >
+            
+        
+              <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="OR SELECT FROM NEARBY PLACES"
+        android:textColor="#29a3c7" 
+        android:paddingTop="5dp"
+        android:textSize="18dp"
+        
+        android:paddingBottom="5dp"/>
+    <View android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#29a3c7"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:headerDividersEnabled="true" >"
+    </ListView>
+    </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

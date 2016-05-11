@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Historique Notification</string>
+        <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="drawer_open">Slider Menu Opened</string>
+    <string name="drawer_close">Slider Menu Closed</string>
+     <string name="cafe_map">Map Café </string>
+      <string name="cafe_liste">Liste Café</string>
+      <string name="map">Map</string>
+      <string name="liste">Liste</string>
+       <string name="facebook_app_id">1142575885761322</string>
+    <!-- Nav Drawer Menu Items -->
+    <string-array name="nav_drawer_items">
+      
+        <item >Home</item>
+        <item >Actualités</item>
+        <item >Réstaurant et café</item>
+        <item >Lieux d\'intérêt </item>
+        <item >Divertissement</item>
+        <item >Météo </item>
+    </string-array>
+    
+    <!-- Nav Drawer List Item Icons -->
+    <!-- Keep them in order as the titles are in -->
+    <array name="nav_drawer_icons">
+        <item>@drawable/ic_home</item>
+        <item>@drawable/ic_people</item>
+        <item>@drawable/ic_photos</item>
+        <item>@drawable/ic_communities</item>
+        <item>@drawable/ic_pages</item>
+        <item>@drawable/meteo</item>
+    </array>
+    
+    <!-- Content Description -->
+    <string name="desc_list_item_icon">Item Icon</string>
+
+</resources>
